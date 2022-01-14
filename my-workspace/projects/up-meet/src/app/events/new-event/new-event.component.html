@@ -1,0 +1,31 @@
+
+<h2>Add an Event to UpMeet</h2>
+
+<div class="mb-3">
+    <label for="title" class="form-label">Title: </label>
+    <input type="text" class="form-control" id="title" placeholder="Enter title of event here" [(ngModel)]="title">
+  </div>
+  <p></p>
+  <div class="mb-3">
+    <label for="Date" class="form-label">Date: </label>
+    <input type="text" class="form-control" id="Date" placeholder="YYYY-MM-DDTHH:MM:SS" [(ngModel)]="date">
+  </div>
+  <p></p>
+  <div class="mb-3">
+    <label for="Location" class="form-label">Location: </label>
+    <input type="text" class="form-control" id="Location" placeholder="Where is your event being held?" [(ngModel)]="location">
+  </div>
+  <p></p>
+  <div class="mb-3">
+    <label for="Organization:" class="form-label">Organization: </label>
+    <input type="text" class="form-control" id="Organization:" placeholder="Who is putting on this event?" [(ngModel)]="organization">
+  </div>
+  <p></p>
+  <div class="mb-3">
+    <label for="Details" class="form-label">Details: </label>
+    <input type="text" class="form-control" id="Details" placeholder="Tell us more about the event" [(ngModel)]="details">
+  </div>
+  <p></p>
+  <a href="/home">
+  <button (click)="newEvent()">Add Event</button>
+</a>

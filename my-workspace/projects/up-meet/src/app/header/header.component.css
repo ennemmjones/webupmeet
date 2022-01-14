@@ -1,0 +1,30 @@
+nav{
+    background-color: tomato;
+    padding: 10px;
+}
+nav h1{
+    color:#303030;
+    display: inline;
+   
+}
+
+nav img{
+    width: 150px;
+}
+
+nav ul{
+    float: right;
+    list-style-type: none;
+}
+ul li{
+    
+    display: inline-block;
+    padding: 10px;
+}
+
+li a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+}

@@ -1,0 +1,35 @@
+
+<div class="d-flex flex-column align-items-center">
+    <h3>List of all Favorites</h3>
+    <p *ngFor="let Favorite of favorites"> ID:{{ Favorite.id }} EventID:{{ Favorite.eventID }}  UserID:{{ Favorite.userID}} </p>
+</div>
+
+<!-- <div class="form-group"> 
+    <label>Id</label>
+    <input type="text"  [(ngModel)]="ID">
+    
+</div>
+
+
+<button (click)="deleteFavorite(ID)">Delete</button> -->
+
+
+<div class="form-group"> 
+    <label>UserId: </label>
+    <input type="text"  [(ngModel)]="userID">
+    
+</div>
+
+<button (click)="userFavoriteList()">Display User Favorites</button>
+
+
+<!-- <div class="d-flex flex-column align-items-center">
+    <p>Favorites for {{ userID }}</p>
+    <p *ngFor="let Favorite of userFavorites"> ID:{{ Favorite.id }}  EventID:{{ Favorite.eventID }}  UserID:{{ Favorite.userID}} <button (click)="deleteFavorite(Favorite.id)">Delete</button></p>
+</div> -->
+
+<div class="d-flex flex-column align-items-center">
+    <h3>Events from {{ userID }}'s Favorites list</h3>
+    <p *ngFor="let event of combinedList"> Title: {{ event.title }} Location: {{ event.location }} Date: {{ event.date }} <button (click)="deleteFavorite(event.id)">Delete</button>         
+    </p>
+</div>
