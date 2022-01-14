@@ -20,9 +20,9 @@ export class EventsApiService {
 
     
     getEvents(): Observable<Events[]> {
-        return this.httpClient.get<Events[]>("https://localhost:44347/events/list")
+        return this.httpClient.get<Events[]>("https://upmeetapi20220113204457.azurewebsites.net/events/list")
     }
     createEvent(event: Events): Observable<Events> {
-        return this.httpClient.post<Events>("https://localhost:44347/events/new/", event)
+        return this.httpClient.post<Events>("https://https://upmeetapi20220113204457.azurewebsites.net/events/new/", event)
     }
 }
